@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+</head>
+
+<body>
+<p>Hello world! This is HTML5 Boilerplate.</p>
+<script>
+
+  // Запросіть у користувача 2 числа та виведіть середнє арифметичне цих чисел.
+  function AvgNumbers() {
+    let x = prompt("Введите значение X", 0);
+    let y = prompt("Введите значение Y", 0);
+
+    x = parseInt(x);
+    y = parseInt(y);
+
+    let avg = (x + y) / 2;
+    alert(avg);
+  }
+  AvgNumbers();
+
+  // Запросіть у користувача число, зведіть це число в 2 ступінь та виведіть на екран.
+  function PowerOfTwo() {
+    let x = prompt("Введите значение X", 0);
+    x = parseInt(x);
+
+    let power = x ** 2;
+    alert(power);
+  }
+  // PowerOfTwo();
+
+  // Запросіть у користувача його ім'я та виведіть у відповідь «Привіт, (його ім'я)!».
+  function HelloName() {
+    let name = prompt("Введите имя", "Bob");
+    alert("Привет, " + name + "!");
+  }
+  // HelloName();
+
+  // Запросіть у користувача довжину сторони квадрата та виведіть його периметр.
+  function SquareSize() {
+    let square = prompt("Введите длину стороны квадрата: ", 0);
+    square = parseInt(square);
+    let perimeter = 4 * square;
+    alert(perimeter);
+  }
+  // SquareSize();
+
+  // Запросіть у користувача радіус кола та виведіть його площу.
+  function RadiusSize()
+  {
+    let radius = prompt("Введите радиус круга: ", 0);
+    radius = parseInt(radius);
+    let area = 3.14 * radius ** 2;
+    alert(area);
+  }
+  // RadiusSize();
+
+</script>
+</body>
+
+</html>

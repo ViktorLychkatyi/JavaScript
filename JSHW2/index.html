@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+</head>
+
+<body>
+<script>
+    // Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
+    let nums = (a, b, c) => (String(a) + String(b) + String(c));
+    alert(nums(1, 4, 9));
+
+    // Написать функцию, которая принимает 2 числа и возвращает меньшее из них.
+    function minNum(a, b) {
+      let nums = [a, b];
+      min = Math.min(...nums);
+      alert(min);
+    }
+    // minNum(1, 4);
+
+    // Написать функцию, которая возводит переданное число в указанную степень.
+    function powerNum(a, b) {
+      let nums = [a, b];
+      power = Math.pow(...nums);
+      alert(power);
+    }
+    // powerNum(4, 4);
+
+    // Написать функцию, которая принимает 2 числа и знак (+, -, *, /), считает пример и возвращает результат.
+    function calculator(a, b) {
+      run = prompt("Ввдеите любую операцию: +, -, *, /");
+
+      switch (run) {
+        case "+":
+
+        function add(a, b) {
+          alert(a + b);
+        }
+          add(a, b);
+          break;
+
+        case "-":
+
+        function subtraction(a, b) {
+          alert(a - b);
+        }
+          subtraction(a, b);
+          break;
+
+        case "*":
+
+        function multiply(a, b) {
+          alert(a * b);
+        }
+          multiply(a, b);
+          break;
+
+        case "/":
+
+        function division(a, b) {
+          alert(a / b);
+        }
+          division(a, b);
+          break;
+      }
+    }
+    // calculator(5, 2);
+
+    // Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс». Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+    function convertorTime() {
+      let date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+
+      res = (hours + ':' + minutes + ':' + seconds);
+      alert(res);
+    }
+    // convertorTime();
+
+  </script>
+</body>
+
+</html>
