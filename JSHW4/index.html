@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="textStyle">Hello world</p>
+<script>
+    class PrintMachine {
+        constructor(size, color, family) {
+            this.size = size;
+            this.color = color;
+            this.family = family;
+
+            const textElement = document.getElementById("textStyle");
+            textElement.style.fontSize = this.size;
+            textElement.style.color = this.color;
+            textElement.style.fontFamily = this.family;
+        }
+        print() {
+            document.write(this.size + this.color + this.family);
+        }
+    }
+
+    const text = new PrintMachine("24px", "red", "\"Comic Sans MS\", Regular");
+    // text.print();
+</script>
+</body>
+</html>

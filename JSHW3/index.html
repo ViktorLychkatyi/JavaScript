@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rectangle = {};
+        rectangle.width = 100;
+        rectangle.height = 50;
+        rectangle.x1 = 0;
+        rectangle.y1 = 0;
+        rectangle.x2 = 0;
+        rectangle.y2 = 0;
+
+        // Функция принимает объект-прямоугольник и выводит информацию о нем (где какая точка расположена).
+        function rectanglePoints() {
+            console.log("Левый: ", rectangle.x1);
+            console.log("Верхний: ", rectangle.y1);
+            console.log("Правый: ", rectangle.x2);
+            console.log("Нижний: ", rectangle.y2);
+        }
+        // rectanglePoints();
+
+        // Функция принимает объект-прямоугольник и возвращает его ширину.
+        function rectangleWidth() {
+            console.log("Ширина: ", rectangle.width);
+        }
+        // rectangleWidth();
+
+        // Функция принимает объект-прямоугольник и возвращает его высоту.
+        function rectangleHeight() {
+            console.log("Высота: ", rectangle.height);
+        }
+        // rectangleHeight();
+
+        // Функция принимает объект-прямоугольник и возвращает его площадь.
+        function rectangleArea() {
+            console.log("Общая площадь: ", rectangle.width * rectangle.height);
+        }
+        // rectangleArea();
+
+        // Функция принимает объект-прямоугольник и возвращает его периметр.
+        function rectanglePerimeter()
+        {
+            console.log("Общий периметр: ", rectangle.width + rectangle.height);
+        }
+        rectanglePerimeter();
+
+
+    </script>
+</body>
+</html>
