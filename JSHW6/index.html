@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-<script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    .counter {
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 10%;
+        height: 65px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+    }
 
+    .counter button {
+        background: none;
+        border-style: none;
+}
+</style>
+<body>
+    <div class="counter">
+        <button class="decrease"><span>−</span></button>
+        <span class="value">1</span>
+        <button class="increase"><span>+</span></button>
+    </div>
+<script>
+    document.querySelectorAll('.counter').forEach(counter => {
+        const count = counter.querySelector('.value');
+        const increaseBtn = counter.querySelector('.increase');
+        const decreaseBtn = counter.querySelector('.decrease');
+
+        increaseBtn?.addEventListener('click', () => {
+            let current = parseInt(count.textContent);
+            count.textContent = current + 1;
+        });
+
+        decreaseBtn?.addEventListener('click', () => {
+            let current = parseInt(count.textContent);
+            if (current > 1) {
+                count.textContent = current - 1;
+            }
+        });
+    });
 </script>
 </body>
 </html>
